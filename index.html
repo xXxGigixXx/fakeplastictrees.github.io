@@ -8,68 +8,81 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #333;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/3/30/Glitter_texture_pink_background.jpg') center/cover fixed no-repeat;
+      color: #fff;
+      text-shadow: 1px 1px 3px #000;
     }
 
     header {
-      background-color: #1a1a1a;
-      padding: 20px 0;
-      color: white;
       text-align: center;
+      padding: 100px 20px 60px;
+      background: rgba(0, 0, 0, 0.4);
     }
 
-    nav {
-      background-color: #333;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
+    header h1 {
+      font-size: 3em;
+      color: #ff69b4;
+      letter-spacing: 2px;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
+    header p {
+      font-size: 1.2em;
+      color: #f8d8e8;
+      margin-top: 10px;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.95);
+      color: #222;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 40px 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(255, 105, 180, 0.2);
     }
 
-    .section {
-      margin-bottom: 60px;
-    }
-
-    h1, h2 {
+    .container h2 {
+      font-size: 1.8em;
       margin-bottom: 20px;
+      color: #c71585;
     }
 
-    p {
+    .container p {
       font-size: 1.05em;
-      line-height: 1.7;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: #ff1493;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background: #e31384;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #f1f1f1;
       font-size: 0.9em;
-      color: #666;
+      background: rgba(0, 0, 0, 0.6);
+      color: #eee;
     }
 
     @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
-      nav a {
-        margin: 10px 0;
+      .container {
+        margin: 20px;
+        padding: 30px 20px;
       }
     }
   </style>
@@ -78,36 +91,25 @@
 
   <header>
     <h1>Fake Plastic Trees</h1>
-    <p>Personal Website</p>
+    <p>a pink journal, a mood, a state of mind</p>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <div class="container">
-    <section class="section" id="about">
-      <h2>About Me</h2>
-      <p>Hey, I’m someone who loves turning ideas into things that actually work. Whether it’s a DIY audio setup, a smart home prototype, or a piece of code that automates the boring stuff — I enjoy building, tweaking, and learning as I go. My background’s in IT, but I don’t like sticking to just one label. I explore everything from electronics and machine learning to design and market analysis. This site is a quiet corner of the internet to document my work, experiments, and thoughts. No frills — just real projects, real learning, and (hopefully) useful stuff.</p>
-    </section>
+    <h2>Welcome</h2>
+    <p>
+      This isn’t a blog. It’s a personal archive — part diary, part moodboard, part quote wall.  
+      If it’s dramatic, pink, or deeply felt... it belongs here.
+    </p>
 
-    <section class="section" id="projects">
-      <h2>Projects</h2>
-      <p>Chat-Based Ordering System
-Recreating the feel of a restaurant counter — with AI. A conversational ordering assistant that makes menu browsing and placing orders intuitive. Currently building the core logic and expanding its features step-by-step. <br>3D-Printed Audio System <br>Built a full-range speaker system from the ground up — custom 3D-printed cabinets, Class D amp, SB Acoustics drivers, and miniDSP for fine-tuned audio. Sounds as good as it looks.
-<br>Trading Data Dashboard <br> A Python-based market insights dashboard that pulls data from multiple sources, analyzes patterns, and delivers smart signals. Designed to help with quicker, more confident decision-making.</p>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>Contact</h2>
-      <p>📬 Email: [youremail@example.com] <br>🐙 GitHub: [github.com/yourhandle] <br>💬 LinkedIn: [linkedin.com/in/yourname]</p>
-    </section>
+    <div class="buttons">
+      <a href="entries.html">read my diary</a>
+      <a href="mood.html">view the moodboard</a>
+      <a href="quotes.html">quote wall</a>
+    </div>
   </div>
 
   <footer>
-    &copy; 2025 FakePlasticTrees. All rights reserved.
+    &copy; 2025 Fake Plastic Trees. made with heart & HTML.
   </footer>
 
 </body>

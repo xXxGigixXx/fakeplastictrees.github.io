@@ -1,27 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fake Plastic Trees</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f3f3f3;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
       color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px 0;
+      color: white;
       text-align: center;
-      padding: 100px;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
     }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
     p {
-      font-size: 1.2em;
-      color: #555;
+      font-size: 1.05em;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Fake Plastic Trees</h1>
-  <p>This website has no real purpose... but hey, it’s alive.</p>
+
+  <header>
+    <h1>Fake Plastic Trees</h1>
+    <p>Personal Website</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>Hello. I'm someone who decided to create a personal site using GitHub Pages. This is a basic example of how a clean, professional one-page layout can look. Nothing fancy. Just structure, clarity, and minimalism.</p>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <p>Coming soon. This section could showcase links, screenshots, or descriptions of work — if you have any to list.</p>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>You can add a contact form here using third-party tools like Formspree or simply link your email address. For now, this is just placeholder text.</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 FakePlasticTrees. All rights reserved.
+  </footer>
+
 </body>
 </html>

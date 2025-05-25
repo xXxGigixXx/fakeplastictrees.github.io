@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moodboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffe4f2;
+    }
+
+    header {
+      background-color: #ff69b4;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ffeef5;
+    }
+
+    nav {
+      text-align: center;
+      background: #ffd1ea;
+      padding: 12px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #c71585;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff0f5;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>moodboard</h1>
+    <p>color, chaos, glitter, and calm</p>
+  </header>
+
+  <nav>
+    <a href="index.html">home</a>
+    <a href="entries.html">diary</a>
+    <a href="quotes.html">quotes</a>
+  </nav>
+
+  <div class="grid">
+    <!-- Add as many images as you want here -->
+    <img src="https://i.pinimg.com/originals/e6/b1/6e/e6b16e62794e9a16f17c3063b6fc7097.jpg" alt="pink mood" />
+    <img src="https://i.pinimg.com/originals/d7/b5/f9/d7b5f98a5e2c21b6df61b4cf61b2d847.jpg" alt="heart mirror" />
+    <img src="https://i.pinimg.com/originals/6a/f6/fc/6af6fc0a13f9bce1d77b6e377cfe7d7f.jpg" alt="neon pink quote" />
+    <img src="https://i.pinimg.com/originals/3d/f7/62/3df7629ab2753004e8bcf255b3e91fcd.jpg" alt="girl boss phone" />
+    <img src="https://i.pinimg.com/originals/9f/3f/6a/9f3f6a6b1c1560ec81c6762e0208c8b8.jpg" alt="pink smudged lip" />
+    <img src="https://i.pinimg.com/originals/2d/01/c3/2d01c37b20295d6542fdbcb6a5c4ee56.jpg" alt="pink journal vibes" />
+  </div>
+
+  <footer>
+    &copy; 2025 Fake Plastic Trees. serving pink pixels since forever.
+  </footer>
+
+</body>
+</html>

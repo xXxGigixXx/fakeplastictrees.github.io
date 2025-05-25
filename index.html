@@ -35,18 +35,27 @@ header p {
   display: inline-block;
   margin: 10px 15px;
   padding: 12px 24px;
-  border-radius: 30px;
+  border-radius: 999px;
   background: #ff1493;
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 15px rgba(255, 20, 147, 0.4);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(255, 20, 147, 0.2);
 }
 
 .buttons a:hover {
-  background: #e31384;
-  transform: scale(1.05);
+  background: #e0118b;
+  box-shadow: 0 6px 12px rgba(255, 20, 147, 0.4);
+  transform: translateY(-2px);
+}
+.site-footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.95em;
+  background-color: #fff0f5;
+  color: #666;
+  margin-top: 80px;
 }
   </style>
 </head>
@@ -70,10 +79,9 @@ header p {
       <a href="quotes.html">quote wall</a>
     </div>
   </div>
-
-  <footer>
-    &copy; 2025 Fake Plastic Trees. made with heart & HTML.
-  </footer>
-
 </body>
+  <footer class="site-footer">
+  © 2025 <strong>Fake Plastic Trees</strong>. made with heart & HTML.
+</footer>
+
 </html>
